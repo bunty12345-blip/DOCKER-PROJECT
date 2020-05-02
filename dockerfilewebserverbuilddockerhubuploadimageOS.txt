@@ -1,0 +1,30 @@
+How to build a webserver in docker file:
+Step 1:  First Create a directory
+# mkdir/test
+# cd/test
+Step 2: Create a file name "Dockerfile"
+# touch /test/Dockerfile
+Step 3: Design a sample html webpage eg : "sujayshankarbiswas.html"
+# vim  /test/sujayshankarbiswas.html
+Step 4: Edit the file using the following instructions:
+ # vi Dockerfile
+FROM centos:latest
+MAINTAINER NewstarCorporation
+RUN yum -y install httpd
+COPY sujayshankarbiswas.html /var/www/html
+CMD [“/usr/sbin/httpd”, “-D”, “FOREGROUND”]
+EXPOSE 80
+STEP 5 : Build the image using docker build . Test is the directory where Dockerfile is present and -t option is to tag or name the image.
+# docker build /test/ -t webserver:v1
+The webserver is successfully build.
+Now upload the webserver to docker hub account :
+1. Login to docker hub and create your own public repository so that people can access your account and download your webserver image that you upload on docker hub and run it and launch a new container OS
+In linux commands
+1. # docker login
+give the username and password  of your docker hub account
+After doing this :
+2. Now push the webserver image to your docker hub acocunt
+ # docker push username/webserver:v1
+ https://hub.docker.com/r/bunty12345/webserver
+docker pull bunty12345/webserver
+The above two links will get you to the docker hub repo where you can download my images using docker pull command in your Linux OS.
