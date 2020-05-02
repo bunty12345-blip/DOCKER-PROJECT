@@ -1,0 +1,6 @@
+Launch ubuntu image OS from docker hub
+# docker pull ubuntu:14.04
+Launch a  new container OS using centos:latest version from docker hub repo public image download 
+# docker pull centos:latest
+Launch  a new container OS using centos:latest image:
+# docker run -it  --name SujayOS centos:latest
