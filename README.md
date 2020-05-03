@@ -57,3 +57,32 @@ This is not a docker command this is http server argument which is used to run w
 
 CMD [“/usr/sbin/httpd”,” -D”,” FOREGROUND”]
   
+  Given below is the link of my webserver downloaded in docker hub:
+  
+  https://hub.docker.com/r/bunty12345/webserver
+  
+  OR
+  
+  docker pull bunty12345/webserver
+  
+  The last link can be used to pull my image webserver in your own linux OS in docker container and launch your new os from my image
+  
+  Also I have included the apache webserver how to setup and  run as additional topic to my project .
+  
+  How to configure run write code and view in linux and windows your webpages using html code that I have done and configured.
+  
+  Also I have pulled mysql and wordpress images into my docker container and mounted volume given storage to mysql container similar 
+  
+  like  a  pendrive mount so that even if the OS environment gets crashed my mysql backup can relaunch my database server within some 
+  
+  minutes and save a lot of time. I have created a simple empty database using mysql image where later on I can add or remove data as 
+  
+  per my choice.
+  
+  Also I have included  and shown that how to setup Jenkins software on top of Docker container and how to access the site in Docker and 
+  
+  how to access the same that I view from linux OS same site view in my windows OS  or my mobile phone or anywhere connected in the 
+  
+  world I can view my site it will run until I stop my jenkins site from docker container  OS running on top of linux OS  or  change my 
+  
+  network adapter from bridge adapter network to NAT network.
