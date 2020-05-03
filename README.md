@@ -11,6 +11,7 @@ THINGS USED TO BUILD THE PROJECT
 3. Html Language use for website 
 
 4.RedHat Linux 8 Operating System
+
 WHY USE DOCKER CONTAINER  TO BUILD THE WEBSERVER??
 
 Docker is an opensource light weight container which consumes very less amount of RAM and CPU about 15 to 20 MB it takes for installation. Using docker container we can launch our webservices very fast and due to its light weight it is favourable over virtualisation technology. We can launch install boot and run and start the docker container services in just 1 second. Inside docker container we can launch and run multiple OS at a time as the size of the containers are very small and the system does not hang up when parallel containers are running.
