@@ -1,0 +1,23 @@
+Apache web server setup:
+Step 1: Get the latest Centos Docker image by using docker pull command. Docker pull command is used to download or pull latest image from Docker Hub repositories.
+#docker pull centos:latest
+Step 2: To check and list all docker images
+#docker images
+Step 3: To run docker image we use following command
+-it : This argument is used to allocate a bash shell and take standard input.
+— name : This argument is used to tag a name to the running container.
+#docker run –it –name webserver centos:latest
+Step 4: Now install Apache webserver and it’s all dependencies
+[root@Docker_Id]#yum install httpd –y
+Step 5: Now create a create a webpage at location /var/www/html/index.html
+[root@Docker_Id]# vi /var/www/html/index.html
+Step 6: Exit from the running container using exit command. Exit command will stop the container. Exit command of docker same as power off or shut down of our computer.
+[root@Docker_Id]# exit
+Step 7: Now we have container in which apache webserver is installed and our webpage is configured. We can make a new customized docker image from the stopped docker image using docker commit command. Docker commit command will build our own image.
+#docker commit <container_id or name of container will launching> <Name of new image>:<version name>
+#docker commit webserver webserver:v1
+Step 8: Launching a webserver container using our customized image.
+-p: This argument is used to port forwarding. Which means anybody from outside who comes for 8080 its request is forwarded to port 80. Port 80 is default port number where apache webserver runs.
+/usr/sbin/httpd –D FOREGROUND: This argument is command which will run when container is launched this command will start the web server
+Step 9: To See the Result on web browser
+http://<host ip>:8080/
