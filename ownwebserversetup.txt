@@ -1,0 +1,25 @@
+Setup of personal webserver:
+# yum install httpd
+# systemctl start httpd
+# docker pull centos:latest 
+# docker  run  -it  --name webserver centos:latest
+Install httpd service inside docker container launched from centos:image
+# yum install httpd -y
+# vi /var/www/html/linux.html 
+Inside this file write own html code
+<!DOCTYPE html>
+<html>
+<body bgcolor = blue>
+<h1> This is Sujayshankar biswas</h1>
+<h2> From West Bengal</h2>
+</body>
+</html>
+save this file
+#exit
+exit from docker container
+Copy the webserver part to another file webserver
+#docker commit webserver webserver:v1
+Inspect all the details about webserver
+#docker inspect webserver
+
+ 
