@@ -86,3 +86,17 @@ CMD [“/usr/sbin/httpd”,” -D”,” FOREGROUND”]
   world I can view my site it will run until I stop my jenkins site from docker container  OS running on top of linux OS  or  change my 
   
   network adapter from bridge adapter network to NAT network.
+
+  In addition to this I have developed a virus code .bat extension file which I have used in one of the new launched docker container 
+  
+  and that container got shut down and crashed and freezed while other containers were running successfully parallely used here the 
+  
+  concept of multi threading and showed how quickly can one launch a new webserver upon its OS getting crashed and terminated and used 
+  
+  mounted file part from storage and used it to deploy run the webservices fast.
+  
+  Also in my project I have used the concept of tunneling where I have used ngrok software and used it in linux OS and used ./ngrok http 
+  
+  80 to connect to the private IP to public IP convert and host our webservices from anywhere in the world till we run the ngrok cmd.
+  
+  Used this practical to host jenkins server and our personal webservices from mobile and another OS connect view the same site.
